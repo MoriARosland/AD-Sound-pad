@@ -1,2 +1,6 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<div class="flex flex-col items-center justify-center">
+	<h1>AD Sound-pad</h1>
+	<p>
+		Github <a href="https://github.com/NamePending99/AD-Sound-pad">repository</a>
+	</p>
+</div>
