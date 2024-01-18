@@ -3,7 +3,7 @@
 	import SoundCard from '$lib/SoundCard.svelte';
 
 	let test_pad_data: PadData = {
-		title: 'this is text from a component.',
+		title: 'yaS',
 		sound_source: '/placeholder'
 	};
 
@@ -12,6 +12,7 @@
 
 <div class="flex flex-col items-center justify-center py-5">
 	<h1 class="text-2xl">AD Sound-pad</h1>
+
 	<p>
 		Github <a href="https://github.com/NamePending99/AD-Sound-pad">repository</a>
 	</p>
