@@ -6,6 +6,8 @@
 		title: 'this is text from a component.',
 		sound_source: '/placeholder'
 	};
+
+	let padDataArray: PadData[] = Array.from({ length: 12 }, () => test_pad_data);
 </script>
 
 <div class="flex flex-col items-center justify-center py-5">
@@ -17,37 +19,8 @@
 
 <div class="flex flex-col items-center mt-8">
 	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-		<SoundCard pad_data={test_pad_data}></SoundCard>
-		<div class="border rounded border-blue-500 p-4 w-48 h-28 hover:scale-105 transition-transform">
-			<p>Place holder</p>
-		</div>
-		<div class="border rounded border-blue-500 p-4 w-48 h-28 hover:scale-105 transition-transform">
-			<p>Place holder</p>
-		</div>
-		<div class="border rounded border-blue-500 p-4 w-48 h-28 hover:scale-105 transition-transform">
-			<p>Place holder</p>
-		</div>
-		<div class="border rounded border-blue-500 p-4 w-48 h-28 hover:scale-105 transition-transform">
-			<p>Place holder</p>
-		</div>
-		<div class="border rounded border-blue-500 p-4 w-48 h-28 hover:scale-105 transition-transform">
-			<p>Place holder</p>
-		</div>
-		<SoundCard pad_data={test_pad_data}></SoundCard>
-		<div class="border rounded border-blue-500 p-4 w-48 h-28 hover:scale-105 transition-transform">
-			<p>Place holder</p>
-		</div>
-		<div class="border rounded border-blue-500 p-4 w-48 h-28 hover:scale-105 transition-transform">
-			<p>Place holder</p>
-		</div>
-		<div class="border rounded border-blue-500 p-4 w-48 h-28 hover:scale-105 transition-transform">
-			<p>Place holder</p>
-		</div>
-		<div class="border rounded border-blue-500 p-4 w-48 h-28 hover:scale-105 transition-transform">
-			<p>Place holder</p>
-		</div>
-		<div class="border rounded border-blue-500 p-4 w-48 h-28 hover:scale-105 transition-transform">
-			<p>Place holder</p>
-		</div>
+		{#each padDataArray as cardData}
+			<SoundCard pad_data={cardData} />
+		{/each}
 	</div>
 </div>
